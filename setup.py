@@ -17,5 +17,6 @@ setup(
         "numpy<1.20.0",
         "GitPython",
         "onnx",
+        'mujoco==3.2.3'
     ],
 )

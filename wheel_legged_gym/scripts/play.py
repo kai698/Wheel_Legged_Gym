@@ -50,19 +50,19 @@ def play(args):
     env_cfg.terrain.num_cols = 10
     env_cfg.terrain.max_init_terrain_level = env_cfg.terrain.num_rows - 1
     env_cfg.terrain.curriculum = False
-    env_cfg.noise.add_noise = True
-    env_cfg.domain_rand.randomize_friction = True
+    env_cfg.noise.add_noise = False
+    env_cfg.domain_rand.randomize_friction = False
     env_cfg.domain_rand.friction_range = [0.1, 0.2]
-    env_cfg.domain_rand.randomize_restitution = True
-    env_cfg.domain_rand.randomize_base_com = True
+    env_cfg.domain_rand.randomize_restitution = False
+    env_cfg.domain_rand.randomize_base_com = False
     env_cfg.domain_rand.push_robots = False
     env_cfg.domain_rand.push_interval_s = 2
     env_cfg.domain_rand.max_push_vel_xy = 1
-    env_cfg.domain_rand.randomize_Kp = True
-    env_cfg.domain_rand.randomize_Kd = True
-    env_cfg.domain_rand.randomize_motor_torque = True
-    env_cfg.domain_rand.randomize_default_dof_pos = True
-    env_cfg.domain_rand.randomize_action_delay = True
+    env_cfg.domain_rand.randomize_Kp = False
+    env_cfg.domain_rand.randomize_Kd = False
+    env_cfg.domain_rand.randomize_motor_torque = False
+    env_cfg.domain_rand.randomize_default_dof_pos = False
+    env_cfg.domain_rand.randomize_action_delay = False
 
     # prepare environment
     env, _ = task_registry.make_env(name=args.task, args=args, env_cfg=env_cfg)
@@ -109,8 +109,8 @@ def play(args):
         else:
             actions = policy(obs.detach())
 
-        env.commands[:, 0] = 2
-        env.commands[:, 2] = 0.3
+        env.commands[:, 0] = 3
+        env.commands[:, 2] = 0.4
         env.commands[:, 3] = 0
 
         if CoM_offset_compensate:
