@@ -1006,7 +1006,7 @@ class LeggedRobot(BaseTask):
             dtype=torch.float,
             device=self.device,
             requires_grad=False,
-        )  # x vel, y vel, yaw vel, heading
+        )  # x vel, yaw vel, height, heading
         self.commands_scale = torch.tensor(
             [
                 self.obs_scales.lin_vel,
