@@ -305,7 +305,7 @@ class LeggedRobotCfgPPO(BaseConfig):
 
     class runner:
         policy_class_name = (
-            "ActorCriticSequence"  # could be ActorCritic, ActorCriticSequence
+            "ActorCritic"  # could be ActorCritic, ActorCriticSequence
         )
         algorithm_class_name = "PPO"
         num_steps_per_env = 48  # per iteration
