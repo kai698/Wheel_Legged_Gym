@@ -791,7 +791,7 @@ class LeggedRobot(BaseTask):
         distance = torch.norm(
             self.root_states[env_ids, :2] - self.env_origins[env_ids, :2], dim=1
         )
-        # robots that walked far enough progress to harder terains
+        # robots that walked far enough progress to harder terrains
         move_up = distance > self.terrain.env_length / 2
         # robots that walked less than half of their required distance go to simpler terrains
         move_down = (

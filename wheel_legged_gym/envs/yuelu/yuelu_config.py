@@ -63,7 +63,7 @@ class YueLuCfg(LeggedRobotCfg):
             l0_dot = 0.1
 
     class terrain(LeggedRobotCfg.terrain):
-        mesh_type = "plane"
+        mesh_type = "trimesh"
 
 
 class YueLuCfgPPO(LeggedRobotCfgPPO):
@@ -71,7 +71,7 @@ class YueLuCfgPPO(LeggedRobotCfgPPO):
     class runner(LeggedRobotCfgPPO.runner):
         # logging
         experiment_name = "yuelu"
-        max_iterations = 2000
+        max_iterations = 3000
 
     class algorithm(LeggedRobotCfgPPO.algorithm):
         kl_decay = (

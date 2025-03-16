@@ -89,7 +89,7 @@ def play(args):
     logger = Logger(env.dt)
     robot_index = 3  # which robot is used for logging
     joint_index = 1  # which joint is used for logging
-    stop_state_log = 1000  # number of steps before plotting states
+    stop_state_log = 1500  # number of steps before plotting states
     stop_rew_log = (
         env.max_episode_length + 1
     )  # number of steps before print average episode rewards
@@ -109,12 +109,12 @@ def play(args):
         else:
             actions = policy(obs.detach())
 
-        env.commands[:, 0] = 3
+        env.commands[:, 0] = 2
         env.commands[:, 2] = 0.4
         env.commands[:, 3] = 0
 
         if CoM_offset_compensate:
-            if i > 200 and i < 800:
+            if i > 100 and i < 1400:
                 vel_cmd[:] = env.commands[:, 0]
             else:
                 vel_cmd[:] = 0
