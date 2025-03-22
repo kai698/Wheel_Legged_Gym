@@ -157,28 +157,28 @@ class LeggedRobotCfg(BaseConfig):
 
     # 仿真环境随机化
     class domain_rand:
-        randomize_friction = False
+        randomize_friction = True
         friction_range = [0.1, 2.0]
-        randomize_restitution = False
+        randomize_restitution = True
         restitution_range = [0.0, 1.0]
-        randomize_base_mass = False
+        randomize_base_mass = True
         added_mass_range = [-2.0, 3.0]
-        randomize_inertia = False
+        randomize_inertia = True
         randomize_inertia_range = [0.8, 1.2]
-        randomize_base_com = False
+        randomize_base_com = True
         rand_com_vec = [0.05, 0.05, 0.05]
-        push_robots = False
+        push_robots = True
         push_interval_s = 10
         max_push_vel_xy = 3.0
-        randomize_Kp = False
+        randomize_Kp = True
         randomize_Kp_range = [0.9, 1.1]
-        randomize_Kd = False
+        randomize_Kd = True
         randomize_Kd_range = [0.9, 1.1]
-        randomize_motor_torque = False
+        randomize_motor_torque = True
         randomize_motor_torque_range = [0.9, 1.1]
-        randomize_default_dof_pos = False
+        randomize_default_dof_pos = True
         randomize_default_dof_pos_range = [-0.05, 0.05]
-        randomize_action_delay = False
+        randomize_action_delay = True
         delay_ms_range = [0, 10]
 
     # 奖励
