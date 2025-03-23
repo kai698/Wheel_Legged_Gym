@@ -1,19 +1,10 @@
 import mujoco
 import mujoco.viewer
 from wheel_legged_gym import WHEEL_LEGGED_GYM_ROOT_DIR
-import yaml
-import argparse
 
 def main():
-    # get config file name from command line
-    parser = argparse.ArgumentParser()
-    parser.add_argument("config_file", type=str, help="config file name in the config folder")
-    args = parser.parse_args()
-    config_file = args.config_file
-
-    with open(f"{WHEEL_LEGGED_GYM_ROOT_DIR}/deploy/deploy_mujoco/configs/{config_file}", "r") as f:
-        config = yaml.load(f, Loader=yaml.FullLoader)
-        xml_path = config["xml_path"].replace("{WHEEL_LEGGED_GYM_ROOT_DIR}", WHEEL_LEGGED_GYM_ROOT_DIR)
+    # model path
+    xml_path = f"{WHEEL_LEGGED_GYM_ROOT_DIR}/resources/robots/yuelu/xml/scene.xml"
 
     # load robot model
     model = mujoco.MjModel.from_xml_path(xml_path)
