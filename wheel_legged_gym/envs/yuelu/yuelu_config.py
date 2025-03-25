@@ -32,14 +32,14 @@ class YueLuCfg(LeggedRobotCfg):
         l0_offset = 0.2
         feedforward_force = 50.0  # [N]
 
-        kp_theta = 10.0  # [N*m/rad]
-        kd_theta = 0.5  # [N*m*s/rad]
-        kp_l0 = 600.0  # [N/m]
-        kd_l0 = 10.0  # [N*s/m]
+        kp_theta = 40.0  # [N*m/rad]
+        kd_theta = 2.5  # [N*m*s/rad]
+        kp_l0 = 1000.0  # [N/m]
+        kd_l0 = 25.0  # [N*s/m]
 
         # PD Drive parameters:
         stiffness = {"f0": 0.0, "f1": 0.0, "wheel": 0}  # [N*m/rad]
-        damping = {"f0": 0.0, "f1": 0.0, "wheel": 0.125}  # [N*m*s/rad]
+        damping = {"f0": 0.0, "f1": 0.0, "wheel": 0.25}  # [N*m*s/rad]
 
     class asset(LeggedRobotCfg.asset):
         file = "{WHEEL_LEGGED_GYM_ROOT_DIR}/resources/robots/yuelu/urdf/yuelu.urdf"
@@ -71,7 +71,7 @@ class YueLuCfgPPO(LeggedRobotCfgPPO):
     class runner(LeggedRobotCfgPPO.runner):
         # logging
         experiment_name = "yuelu"
-        max_iterations = 3000
+        max_iterations = 2000
 
     class algorithm(LeggedRobotCfgPPO.algorithm):
         kl_decay = (

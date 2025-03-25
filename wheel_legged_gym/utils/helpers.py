@@ -164,7 +164,7 @@ def get_args():
         {
             "name": "--task",
             "type": str,
-            "default": "anymal_c_flat",
+            "default": "yuelu",
             "help": "Resume training or start testing from a checkpoint. Overrides config file if provided.",
         },
         {
