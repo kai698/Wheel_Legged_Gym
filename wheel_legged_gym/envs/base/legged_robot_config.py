@@ -160,7 +160,7 @@ class LeggedRobotCfg(BaseConfig):
         randomize_friction = True
         friction_range = [0.1, 2.0]
         randomize_restitution = True
-        restitution_range = [0.0, 1.0]
+        restitution_range = [0.1, 1.0]
         randomize_base_mass = True
         added_mass_range = [-2.0, 3.0]
         randomize_inertia = True
@@ -230,7 +230,7 @@ class LeggedRobotCfg(BaseConfig):
 
     # 噪声
     class noise:
-        add_noise = False
+        add_noise = True
         noise_level = 1.0  # scales other values
 
         class noise_scales:
