@@ -103,7 +103,7 @@ def play(args):
     vel_err_intergral = torch.zeros(env.num_envs, device=env.device)
     vel_cmd = torch.zeros(env.num_envs, device=env.device)
 
-    for i in range(1000 * int(env.max_episode_length)):
+    for i in range(100 * int(env.max_episode_length)):
         if ppo_runner.alg.actor_critic.is_sequence:
             actions, latent = policy(obs, obs_history)
         else:

@@ -129,14 +129,6 @@ python wheel_legged_gym/scripts/play.py --task=yuelu
 - 可通过 `load_run` 和 `checkpoint` 指定其他模型。
 - Play 会导出 Actor 网络，保存于 `logs/{experiment_name}/exported/policies/policy_1.pt`。
 
-### Sim2Sim (Mujoco)
-
-支持在 Mujoco 仿真器中运行 Sim2Sim，目前只在 Mujoco 上测试，未进行策略部署：
-
-```bash
-python deploy/deploy_mujoco/tests/mujoco_test.py
-```
-
 ---
 
 ## 故障排除
