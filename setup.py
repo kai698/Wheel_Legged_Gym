@@ -18,5 +18,6 @@ setup(
         "GitPython",
         "onnx",
         'mujoco==3.2.3'
+        'protobuf==3.20.3'
     ],
 )
