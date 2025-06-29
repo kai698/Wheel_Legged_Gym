@@ -154,12 +154,13 @@ python wheel_legged_gym/scripts/play.py --task=yuelu
 
 ---
 
-## 训练视频
-<video src="video/simplescreenrecorder-2025-06-02_19.58.20 (online-video-cutter.com).mp4"></video>
-<video src="video/simplescreenrecorder-2025-06-02_20.00.03 (online-video-cutter.com).mp4"></video>
-<video src="video/simplescreenrecorder-2025-06-02_20.06.05 (online-video-cutter.com).mp4"></video>
-<video src="video/simplescreenrecorder-2025-06-02_20.11.45 (online-video-cutter.com).mp4"></video>
-<video src="video/simplescreenrecorder-2025-06-02_20.13.09 (online-video-cutter.com).mp4"></video>
+## 训练效果
+<image src=".assets/simplescreenrecorder-2025-06-02_19.58.20 (online-video-cutter.com).gif"></image>
+<image src=".assets/simplescreenrecorder-2025-06-02_20.00.03 (online-video-cutter.com).gif"></image>
+<image src=".assets/simplescreenrecorder-2025-06-02_20.06.05 (online-video-cutter.com).gif"></image>
+<image src=".assets/simplescreenrecorder-2025-06-02_20.11.45 (online-video-cutter.com).gif"></image>
+<image src=".assets/simplescreenrecorder-2025-06-02_20.13.09 (online-video-cutter.com).gif"></image>
+
 
 ## 开源参考
 
