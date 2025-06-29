@@ -154,6 +154,13 @@ python wheel_legged_gym/scripts/play.py --task=yuelu
 
 ---
 
+## 训练视频
+<video src="video/simplescreenrecorder-2025-06-02_19.58.20 (online-video-cutter.com).mp4"></video>
+<video src="video/simplescreenrecorder-2025-06-02_20.00.03 (online-video-cutter.com).mp4"></video>
+<video src="video/simplescreenrecorder-2025-06-02_20.06.05 (online-video-cutter.com).mp4"></video>
+<video src="video/simplescreenrecorder-2025-06-02_20.11.45 (online-video-cutter.com).mp4"></video>
+<video src="video/simplescreenrecorder-2025-06-02_20.13.09 (online-video-cutter.com).mp4"></video>
+
 ## 开源参考
 
 - [legged_gym](https://github.com/leggedrobotics/legged_gym)：腿式机器人强化学习框架。
